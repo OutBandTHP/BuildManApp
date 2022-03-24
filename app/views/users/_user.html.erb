@@ -1,0 +1,14 @@
+<li>
+  <%= gravatar_for user, size: 50 %>
+  <%= link_to user.name, user %>
+  <% if user.admin %>
+    |  <%= t('sessions.admin') %>
+  <% end %>
+  <% if current_user.admin? && !current_user?(user) %>
+    | <%= link_to t('sessions.delete'), user, method: :delete,
+                                        data: { confirm: t('messages.r_u_sure') } %>
+  <% end %>
+  <p>
+    <%= user.email %>
+  </p>
+</li>

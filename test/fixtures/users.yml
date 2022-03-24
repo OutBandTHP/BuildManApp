@@ -1,0 +1,52 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+inactive:
+  name: Inactive User
+  email: inactive@example.com
+  language: en
+  password_digest: <%= User.digest('password') %>
+  admin: false
+  activated: false
+
+userone:
+  name: Example User
+  email: user-one@example.com
+  language: en
+  password_digest: <%= User.digest('password') %>
+  admin: true
+  activated: true
+  activated_at: <%= Time.zone.now %>
+    
+usertwo:
+  name: Another User
+  email: user-two@example.com
+  language: en
+  password_digest: <%= User.digest('password') %>
+  admin: false
+  activated: true
+  activated_at: <%= Time.zone.now %>
+  
+userthree:
+  name: User No. 3
+  email: user-three@example.com
+  language: en
+  password_digest: <%= User.digest('password') %>
+  activated: true
+  activated_at: <%= Time.zone.now %>
+  
+userfour:
+  name: User No. 4
+  email: user-four@example.com
+  language: en
+  password_digest: <%= User.digest('password') %>
+  activated: true
+  activated_at: <%= Time.zone.now %>
+
+<% 30.times do |n| %>
+user_<%= n %>:
+  name:     <%= "User #{n}" %>
+  email:    <%= "user-#{n}@example.com" %>
+  language: en
+  password_digest: <%= User.digest('password') %>
+  activated: true
+  activated_at: <%= Time.zone.now %>
+<% end %>

@@ -1,0 +1,22 @@
+<footer class="footer">
+  <small>
+    <a><%= t('navigation.app_name') %></a>
+      <%= t('navigation.by') %>
+      <a href="https://il.linkedin.com/in/matiss-horodishtiano-6918802" target="_blank">
+      <%= t('navigation.authםr') %>
+    </a>
+  </small>
+  <nav>
+    <ul>
+      <% if ltr_or_rtl == 'ltr' %>
+        <li><%= link_to t('navigation.about'),   about_path %></li>
+        <li><%= link_to t('navigation.contact'), contact_path %></li>
+        <li><%= link_to t('navigation.news'),    news_path %></li>
+      <% else %>
+        <li><%= link_to t('navigation.news'),    news_path %></li>
+        <li><%= link_to t('navigation.contact'), contact_path %></li>
+        <li><%= link_to t('navigation.about'),   about_path %></li>
+      <% end %>
+   </ul>
+  </nav>
+</footer>

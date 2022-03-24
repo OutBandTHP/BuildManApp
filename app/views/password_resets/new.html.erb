@@ -1,0 +1,14 @@
+<% provide(:title, t('sessions.forgot_pw')) %>
+<h1><%= t('sessions.forgot_pw') %></h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_with(url: password_resets_path, scope: :password_reset,
+                  local: true) do |f| %>
+      <%= f.label t('sessions.col_email') %>
+      <%= f.email_field :email, class: 'form-control' %>
+
+      <%= f.submit t('sessions.submit'), class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

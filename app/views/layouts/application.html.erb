@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html dir=<%= ltr_or_rtl %> lang=<%= I18n.locale.to_s %> >
+  <head>
+    <title><%= full_title(yield(:title)) %></title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <% if ltr_or_rtl == 'ltr' %>
+      <%= stylesheet_link_tag 'mht_frame', media: 'all' %>
+    <% else %>
+      <%= stylesheet_link_tag 'mht_frame-rtl', media: 'all' %>
+    <% end %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+    <script type="text/javascript">
+      I18n.defaultLocale = "<%= I18n.default_locale %>";
+      I18n.locale = "<%= I18n.locale %>";
+    </script>
+    <%= javascript_pack_tag 'locale_switcher', 'data-turbolinks-track': 'reload' %>
+
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <%= render 'layouts/header' %>
+    <div class="container">
+      <% flash.each do |message_type, message| %>
+        <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
+      <% end %>
+      <%= yield %>
+      <%= render 'layouts/footer' %>
+      <%= debug(params) if Rails.env.development? %>
+    </div>
+  </body>
+</html>

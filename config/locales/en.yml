@@ -1,0 +1,96 @@
+en:
+          
+  navigation:
+    about:     "About"
+    account:   "Account Info"
+    app_name:  "The Buidling Managemenmt App"
+    authםr:    "Matiss Horodishtiano"
+    by:        "by"
+    contact:   "Contact"
+    help:      "Help"
+    home:      "Home"
+    login:     "Log in"
+    logout:    "Logout"
+    news:      "News"
+    profile:   "Profile"
+    pw_reset:  "Reset Password"
+    settings:  "Setting"
+    signup:    "Sign up now!"
+    users:     "Users Managememnt"
+    
+  frame_pages:
+    about_html:   "This is the <strong>About</strong> page within the MHT Template framework"
+    contact_html: "This is the <strong>Contact</strong> page within the MHT Template framework"
+    help_html:    "This is the <strong>Help</strong> page within the MHT Template framework"
+    home_html:    "This is the <strong>Home</strong> page for the Buidling Managemenmt App"
+    news_html:    "This is the <strong>News</strong> page within the MHT Template framework"
+    
+  sessions:
+    admin:        "Admin"
+    change:       "Change"
+    col_email:    "eMail"
+    col_lang:     "Language"
+    col_user:     "User"
+    confirmation: "Password Confirmation"
+    create_acct:  "Create my account"
+    delete:       "delete"
+    do_login:     "Please log in"
+    forgot_pw:    "Forgot password"
+    newuser:      "New user?"
+    password:     "Password"
+    remember:     "Remember me on this computer"
+    save:         "Save changes"
+    signup:       "Sign up"
+    submit:       "Submit"
+    update_pw:    "Update Password"
+    update_user:  "Edit user"
+
+  number:
+    currency:
+      format:
+        unit:      "$"
+        precision: 2
+        separator: "."
+        delimiter: ","
+        format:    "%u%n"
+
+  errors:
+    error:         "errors"
+    template:
+      body:        "There were problems with the following fields:"
+      header:       
+        one:       "1 error prohibited this %{model} from being saved"
+        other:     "%{count} errors prohibited this %{model} from being saved"
+    invalid_link:  "Invalid activation link"
+    invalid_pw:    "Invalid email/password combination"
+    mail_notfound: "Email address not found"
+    no_empty:      "can't be empty"
+    reset_expired: "Password reset has expired."
+    translation:   "%{lang} translation not available"
+    wronglang:     "%{lang} is not a valid language"
+    wronglogin:    "Invalid email/password combination"
+      
+  messages:
+    activated:     "Account activated!"
+    check_mail:    "Check your email for the activation link."
+    email_sent:    "Email sent with password reset instructions"
+    not_activated: "Account not activated. "
+    pw_reset:      "Password has been reset."
+    r_u_sure:      "Are you sure?"
+    succ_del:      "Delete was succesful!"
+    succ_upd:      "Updated was succesful!"
+    welcome:       "Welcome to the %{name}!"
+     
+  user_mailer:
+    account_activation:
+      content:  "Click on the link below to activate your account"
+      greeting: "Hi %{name},"
+      subject:  "Account activation"
+
+    password_reset:
+      content:  "To reset your password click the link below"
+      greeting: "Hi %{name},"
+      message:  "This link will expire in two hours."
+      subject:  "Password Reset"
+      warning:  "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
+    
