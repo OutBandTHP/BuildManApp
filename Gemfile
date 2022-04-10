@@ -19,10 +19,10 @@ gem 'jbuilder',                    '2.11.5'
 gem 'rexml',                       '3.2.5'
 gem 'bootsnap',                    '1.11.1', require: false
 
-group :developmen, :test do
-#  gem 'sqlite3',                   '1.4.2'
-#  gem 'faker',                     '2.20.0'
-#  gem 'win32console',              '1.3.2'
+group :development, :test do
+  gem 'sqlite3',                   '1.4.2'
+  gem 'faker',                     '2.20.0'
+  gem 'win32console',              '1.3.2'
   gem 'byebug',                    '11.1.3', platforms: [:mri, :mingw, :x64_mingw]
 end
 
@@ -48,7 +48,4 @@ group :production do
   gem 'pg',                        '1.3.5'
 end
 
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-# Uncomment the following line if you're running Rails
-# on a native Windows system:
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
