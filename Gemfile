@@ -20,9 +20,9 @@ gem 'rexml',                       '3.2.5'
 gem 'bootsnap',                    '1.11.1', require: false
 
 group :developmen, :test do
-  gem 'sqlite3',                   '1.4.2'
-  gem 'faker',                     '2.20.0'
-  gem 'win32console',              '1.3.2'
+#  gem 'sqlite3',                   '1.4.2'
+#  gem 'faker',                     '2.20.0'
+#  gem 'win32console',              '1.3.2'
   gem 'byebug',                    '11.1.3', platforms: [:mri, :mingw, :x64_mingw]
 end
 
