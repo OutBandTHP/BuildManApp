@@ -1,5 +1,0 @@
-<%= t('user_mailer.account_activation.greeting', name: @user.name) %>,
-
-<%= t('user_mailer.account_activation.content') %>
-
-<%= edit_account_activation_url(@user.activation_token, locale: @user.language, email: @user.email) %>
