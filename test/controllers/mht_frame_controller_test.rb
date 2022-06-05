@@ -2,6 +2,7 @@ require 'test_helper'
 
 class FramePagesControllerTest < ActionDispatch::IntegrationTest
   def setup
+    I18n.default_locale = :en
     @base_title = I18n.t('navigation.app_name')
   end
   

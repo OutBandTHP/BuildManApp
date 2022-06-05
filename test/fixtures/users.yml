@@ -36,7 +36,7 @@ userthree:
 userfour:
   name: User No. 4
   email: user-four@example.com
-  language: en
+  language: he
   password_digest: <%= User.digest('password') %>
   activated: true
   activated_at: <%= Time.zone.now %>

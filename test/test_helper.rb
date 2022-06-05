@@ -5,7 +5,9 @@ require "minitest/reporters"
 Minitest::Reporters.use!
 
 class ActiveSupport::TestCase
+  parallelize(workers: :number_of_processors)
   fixtures :all
+  include ApplicationHelper
 
   # Returns true if a test user is logged in.
   def is_logged_in?
