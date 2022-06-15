@@ -1,0 +1,14 @@
+<%= form_for(@unit) do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+
+  <%= f.label :unit_no %>
+  <%= f.text_field :unit_no, class: 'form-control', disabled: true %>
+
+  <%= f.label :building %>
+  <%= f.select(:building_id, options_for_select(@unit.project.buildings.all.map { |b| [b.name, b.id] }) ) %>
+
+  <%= f.label :floor %>
+  <%= f.text_area :floor, class: 'form-control' %>
+    
+  <%= f.submit yield(:button_text), class: 'btn btn-primary' %>
+<% end %>

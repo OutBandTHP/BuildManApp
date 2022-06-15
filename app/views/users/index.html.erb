@@ -1,7 +1,7 @@
 <% provide(:title, t('navigation.users')) %>
 <h1><%= t('navigation.users') %></h1>
 
-<%= will_paginate %>
+<%= will_paginate @users %>
 
 <ul class="users">
   <%= render @users %>

@@ -1,0 +1,11 @@
+<% provide(:title, 'Buildings') %>
+<h1>Buildings of <%= @project.name %></h1>
+
+
+<%= will_paginate @buildings %>
+
+<ul class="users">
+  <%= render @buildings %>
+</ul>
+
+<%= will_paginate %>

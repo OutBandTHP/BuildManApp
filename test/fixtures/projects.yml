@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: Project One
+  email: project@example.com
+  address: Address of Project One
+  no_buildings: 1
+  no_units: 2
+  
+two:
+  name: Project two
+  email: project@example.com
+  address: Address of Project two
+  no_buildings: 2
+  no_units: 3

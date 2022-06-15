@@ -1,0 +1,16 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: One
+  address: Address of Project One
+  project: one
+
+two:
+  name: Building A
+  address: Address of Project two
+  project: two
+
+three:
+  name: Building B
+  address: Address of Project two
+  project: two
