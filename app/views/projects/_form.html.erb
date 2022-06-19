@@ -1,0 +1,20 @@
+<%= form_for(@project) do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name, class: 'form-control' %>
+
+  <%= f.label :email, 'eMail of Project' %>
+  <%= f.email_field :email, class: 'form-control' %>
+
+  <%= f.label :address %>
+  <%= f.text_area :address, rows: 3, cols: 40, class: 'form-control' %>
+  
+  <%= f.label :no_buildings, 'No. of Buildings' %>
+  <%= f.text_field :no_buildings, class: 'form-control', disabled: (!local_assigns[:create]) %>
+
+  <%= f.label :no_units, 'No. of Units' %>
+  <%= f.text_field :no_units, class: 'form-control', disabled: (!local_assigns[:create]) %>
+  
+  <%= f.submit yield(:button_text), class: 'btn btn-primary' %>
+<% end %>

@@ -15,18 +15,3 @@ User.create!(name:  "Matiss Horodishtiano",
              activated:              true,
              activated_at:           Time.zone.now)
 
-# Generate a bunch of additional users.
-if Rails.env.development?
-  99.times do |n|
-    name  = Faker::Name.name
-    email = "example-#{n+1}@example.com"
-    password = "password"
-    User.create!(name:  name,
-                 email: email,
-                 language:              "en",
-                 password:              password,
-                 password_confirmation: password,
-                 activated:             true,
-                 activated_at:          Time.zone.now)
-  end                 
-end

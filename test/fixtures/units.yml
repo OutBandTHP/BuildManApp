@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  unit_no: 1
+  floor: MyString
+  project: one
+  building: One
+
+two:
+  unit_no: 1
+  floor: MyString
+  project: two
+  building: One

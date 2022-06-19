@@ -1,0 +1,11 @@
+<% provide(:title, 'Units') %>
+<h1>Units of <%= @project.name %></h1>
+
+
+<%= will_paginate @units %>
+
+<ul class="users">
+  <%= render @units %>
+</ul>
+
+<%= will_paginate %>

@@ -231,3 +231,13 @@ input {
     border-bottom: 1px solid $gray-lighter;
   }
 }
+
+.left {
+  margin-top: 5px;
+  float: right;
+}
+
+.right {
+  margin-top: 5px;
+  float: left;
+}
